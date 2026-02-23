@@ -13,6 +13,11 @@
     src: url(fonts/Poppins-SemiBold.ttf) format('truetype');
 }
 
+:root{
+    --header-desc-width: 31.25rem;
+    --container-max-width: 22.5rem;
+}
+
 *,
 ::before,
 ::after{
@@ -32,37 +37,37 @@ body{
 header{
     font-family: 'Poppins-ExtraLight', sans-serif;
     color: hsl(212, 6%, 44%);
-    font-size: 15px;
+    font-size: 0.938rem;
     text-align: center;
-    padding: 30px 20px;
+    padding: 1.875rem 1.25rem;
 }
 
 .heder-desc{
-    max-width: 500px;
+    max-width: var(--header-desc-width);
 }
 
 h1, h2{
     color: hsl(234, 12%, 34%);
-    font-size: 16px;
-    margin-bottom: 10px;
+    font-size: 1rem;
+    margin-bottom: 0.625rem;
     font-family: 'Poppins-SemiBold', sans-serif;
 }
 
 main{
-    padding: 20px;
+    padding: 1.25rem;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 1.875rem;
 }
 
 .container{
-    max-width: 360px;
+    max-width: var(--container-max-width);
     font-family: 'Poppins-Regular', sans-serif;
     box-shadow: 0 0 20px hsl(234, 12%, 94%);
     display: flex;
     flex-direction: column;
-    padding: 30px;
-    font-size: 15px;
+    padding: 1.875rem;
+    font-size: 0.938rem;
     border-radius: 5px;
     overflow: hidden;
     text-align: start;
@@ -75,7 +80,7 @@ main{
 
 .container picture{
     align-self: flex-end;
-    margin: 23px 15px 23px 0;
+    margin: 1.438rem 0.938rem 1.438rem 0;
 }
 
 
@@ -115,7 +120,7 @@ main{
 
 @media (min-width: 1440px) {
     body{
-        margin-top: 30px;
+        margin-top: 1.875rem;
     }
     main{
         display: grid;
@@ -139,14 +144,14 @@ main{
         align-self: center;
     }
     header{
-        font-size: 18px;
+        font-size: 1.125rem;
     }
     .heder-desc{
-        max-width: 640px;
+        max-width: 40rem;
     }
     header h1,
     header span{
-        font-size: 32px;
+        font-size: 2rem;
     }
 }
 
